@@ -123,6 +123,7 @@ input {
 input:focus {
   outline: none;
   border: 1px solid blue;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 input[class="error"]:focus,
@@ -139,5 +140,34 @@ input[class="error"] + span::after {
 #middle label {
   letter-spacing: 1px;
   font-size: 0.85rem;
+}
+
+#bottom button {
+  background-color: #596D48;
+  border: none;
+  color: white;
+  margin-top: 36px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 250px;
+  height: 52px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#bottom p {
+  font-size: 1.2rem;
+}
+
+.login {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+.login:hover {
+  text-decoration: underline;
 }
 
