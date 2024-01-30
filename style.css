@@ -136,9 +136,6 @@ input[class="error"] + span::after {
   font-size: .8rem;
 } 
 
-
-
-
 #middle label {
   letter-spacing: 1px;
   font-size: 0.85rem;
