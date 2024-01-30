@@ -10,6 +10,7 @@ body, html {
   padding: 0; 
   overflow: hidden;
   font-family: "Open Sans";
+  font-family: Arial;
 }
 
 #main-wrapper {
@@ -67,7 +68,7 @@ body, html {
   align-items: end;
   padding-bottom: 12px;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 2rem;
 }
 
@@ -90,18 +91,56 @@ body, html {
 }
 
 #middle #caption {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
-
 #middle form {
   width: 60%;
-  border: 1px solid black;
 }
 
 #middle form > div {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 260px;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #E5E7EB;
+  padding-left: 8px;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+
+input[class="error"]:focus,
+input[class="error"] {
+  border: 1px solid red;
+}
+
+input[class="error"] + span::after {
+  content: "*Passwords do not match";
+  color: red;
+  font-size: .8rem;
+} 
+
+
+
+
+#middle label {
+  letter-spacing: 1px;
+  font-size: 0.85rem;
 }
 

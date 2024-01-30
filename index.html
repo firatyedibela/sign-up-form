@@ -33,40 +33,44 @@
           <p id="caption">Let's do this!</p>
 
           <div>
-            <div>
+            <div class="input-container">
               <label for="first-name">FIRST NAME</label>
               <input type="text" name="first-name" id="first-name">
             </div>
-            <div>
+            <div class="input-container">
               <label for="last-name">LAST NAME</label>
               <input type="text" name="last-name" id="last-name">
             </div>
           </div>
           <div>
-            <div>
+            <div class="input-container">
               <label for="email">EMAIL</label>
               <input type="email" name="email" id="email">
             </div>
-            <div>
+            <div class="input-container">
               <label for="tel">PHONE NUMBER</label>
               <input type="tel" name="tel" id="tel">
             </div>
           </div>
           <div>
-            <div>
+            <div class="input-container">
               <label for="password">PASSWORD</label>
               <input type="password" name="password" id="password"
-                placeholder="">
+                placeholder="" class="error">
+              <span></span>
             </div>
-            <div>
+            <div class="input-container">
               <label for="confirm-password">CONFIRM PASSWORD</label>
               <input type="password" name="confirm-password" 
-                id="confirm-password">
+                id="confirm-password" class="error">
             </div>
           </div>
         </form>
       </div>
-      <div id="bottom"></div>
+      <div id="bottom">
+        <button>Create Account</button>
+        <p>Already have an account? <a class="login" href="">Log in</a></p>
+      </div>
     </section>
   </div>
    
