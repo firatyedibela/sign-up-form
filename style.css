@@ -16,7 +16,7 @@ body, html {
 #main-wrapper {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(300px, 1fr) 2fr;
 }
 
 #background-image {
@@ -27,7 +27,7 @@ body, html {
 
 #sidebar {
   position: relative;
-  display: flex; 
+  display: flex;
 }
 
 #logo {
